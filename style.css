@@ -62,7 +62,7 @@ form {
   width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 0.7rem; 
+  gap: 0.5rem;   
   margin-bottom: 4rem;
 }
 
@@ -74,6 +74,15 @@ form input {
 
 form input::placeholder {
   color: var(--pale-blue); 
+}
+
+p#email-error {
+  display: none;
+  color: var(--light-red); 
+  font-size: 0.6rem; 
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 form button {
@@ -122,3 +131,4 @@ i.fa-brands.fa-facebook-f {
   color: var(--gray); 
   font-size: 0.7rem; 
 }
+

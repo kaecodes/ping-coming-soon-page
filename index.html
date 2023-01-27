@@ -19,9 +19,10 @@
       <h1>We are launching <span>soon!</span></h1>
       <p>Subscribe and get notified</p>
     </div>
-    <form action="/">
-      <input type="email" placeholder="Your email address">
-      <button type="submit">Notify Me</button>
+    <form action="/" name="notifyMe">
+      <input id="email" name="email" type="email" placeholder="Your email address">
+      <p id="email-error"></p>
+      <button type="submit" id="notify">Notify Me</button>
     </form>
     <div class="illustration">
       <img src="images/illustration-dashboard.png" alt="">
