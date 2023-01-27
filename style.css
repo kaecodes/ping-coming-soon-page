@@ -93,6 +93,7 @@ form button {
   border: none; 
   outline: none; 
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .illustration {
@@ -121,6 +122,12 @@ footer .social i {
   border: 1px solid var(--light-gray); 
   padding: 0.7rem; 
   border-radius: 50%;
+}
+
+footer .social i:hover {
+  background-color: var(--blue);
+  color: white; 
+  cursor: pointer; 
 }
 
 i.fa-brands.fa-facebook-f {
@@ -178,6 +185,7 @@ i.fa-brands.fa-facebook-f {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative; 
   }
 
   form input {
@@ -186,5 +194,17 @@ i.fa-brands.fa-facebook-f {
 
   form button {
     width: 30%;
+  }
+
+  p#email-error {
+    display: none;
+    color: var(--light-red); 
+    font-size: 0.6rem; 
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: absolute; 
+    bottom: -70%; 
+    left: 3%; 
   }
 }
